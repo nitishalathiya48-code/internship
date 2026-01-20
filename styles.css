@@ -1,0 +1,24 @@
+.wrapper {
+  height: 110px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  font:
+    28px "Marker Felt",
+    "Zapfino",
+    cursive;
+  border: 6px solid mediumturquoise;
+}
+
+div {
+  flex: 1;
+}
+.boxLeft {
+  background-color: rgb(245 130 130);
+  outline: 2px solid darkred;
+}
+.boxLeft {
+  background-color: rgb(245 130 130);
+  outline: 2px solid darkred;
+}
