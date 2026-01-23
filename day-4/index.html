@@ -7,15 +7,100 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form>
     <h1 id="exciting">Registration Form</h1>
-    <label for="name">Name:</label>
-    <input
-    type="text"
-    id="name"
-    name="name"
-    required
-    minlength="4"
-    maxlength="20"
-    size="10" />
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="4" maxlength="20" size="10" />
+        </div>
+        </br>
+    <fieldset>
+        <legend>Choose your course:</legend>
+        <div>
+            <input type="checkbox" id="bca" name="bca" switch checked />
+            <label for="bca">BCA</label>
+        </div>
+        <div>
+            <input type="checkbox" id="bba" name="bba" switch/>
+            <label for="bba">BBA</label>
+        </div></fieldset></form></br>
+        </fieldset>
+            <input type="color" name="color" /></br></br>
+            <input type="date" name="date"/></br></br>
+            <input type="email" name="email" required /></br></br>
+            <input type="file" accept="image/*, text/*" name="file"/>
+    </br></br>
+            <input type="range" min="0" max="360" value="0" id="score-slider" />
+                <p>score: <span id="score-value">100 out of</span></p>
+                <div id="box"></div>
+        <button class="favorite styled" type="button">Submit</button>
+        </br>
+    </form>
+</br>
+    <table>
+        <caption>Registered Student Data</caption>
+        <tbody>
+        <tr>
+            <th scope="col" class="no.">No</th>
+            <th scope="col" class="student name">Student name</th>
+            <th scope="col" class="course">Course</th>
+        </tr>
+        <tr>
+            <th scope="row">1</th>
+            <td>Nitisha</td>
+            <td>BCA</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Ritika</td>
+            <td>BBA</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Simran</td>
+            <td>BCA</td>
+        </tr>
+        </tbody>
+    </table>
+    </br>
+    <table>
+        <caption>Rowspan&Colspan</caption>
+        <thead>
+        <tr>
+            <th scope="col" rowspan="2">Name</th>
+            <th scope="col" rowspan="2">ID</th>
+            <th scope="col" colspan="2">Date</th>
+            <th scope="col" rowspan="2">Email</th>
+        </tr>
+        <tr>
+            <th scope="col">Joined</th>
+            <th scope="col">Canceled</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Maitry</th>
+            <td>427311</td>
+            <td><time datetime="2010-06-03">June 3, 2010</time></td>
+            <td>n/a</td>
+            <td>maitry48@gmail.com</td>
+        </tr>
+        <tr>
+            <th scope="row">Aayushi</th>
+            <td>533175</td>
+            <td><time datetime="2011-01-13">January 13, 2011</time></td>
+            <td><time datetime="2017-04-08">April 8, 2017</time></td>
+            <td>aayushi7@gmail.com</td>
+        </tr>
+        <tr>
+            <th scope="row">Hasti</th>
+            <td>601942</td>
+            <td><time datetime="2012-07-23">July 23, 2012</time></td>
+            <td>n/a</td>
+            <td>hastibhat@gmail.com</td>
+        </tr>
+        </tbody>
+    </table>
+    
 </body>
 </html>
