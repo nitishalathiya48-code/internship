@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background-color: #e09494;
+}
+
+header h1 {
+    color: black;
+}
+
+aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
+
+aside > p {
+  margin: 0.5rem;
+}
+
+.crumb {
+  display: inline-block;
+}
+
+.crumb a::after {
+  display: inline-block;
+  color: black;
+  content: ">";
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding: 5px;
+    background-color: #e68080;
+}
