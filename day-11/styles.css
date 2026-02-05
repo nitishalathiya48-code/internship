@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  gap: 20px;
+  flex-flow: row wrap;
+  font: 2em sans-serif;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-image: conic-gradient(
+    at center,
+    rebeccapurple,
+    green,
+    lightblue,
+    rebeccapurple
+  );
+
+  border: 5px solid;
+  box-sizing: border-box;
+}
+.window {
+  clip-path: url("#window");
+}
+
+.cross {
+  clip-path: url("#cross");
+  align-content: center;
+}
