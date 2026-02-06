@@ -42,11 +42,11 @@
 
 .service-container {
     display: flex;
-    background-color: #f0e4e4;
+    background-color: #fffcfc;
     justify-content: center;
     align-items: stretch;
     gap: 2px;
-    background: rgb(240, 228, 228)28);
+    background: rgb(245, 243, 243)28);
 }
 
 .service-card {
