@@ -52,7 +52,7 @@
 .service-card {
     width: 33.33%;
     padding: 50px 40px;
-    text-align: center;
+    text-align: left;
 }
 
 .icon {
@@ -62,14 +62,14 @@
     border-radius: 50%;
     margin: 0 auto 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 }
 
 .design-card{
     margin-top: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 2px;
 }
 
@@ -81,7 +81,7 @@
 
 .design-cards{
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .service-card h2 {
