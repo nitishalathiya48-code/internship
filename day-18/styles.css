@@ -5,13 +5,6 @@
   font-family: Arial, sans-serif;
 }
 
-body {
-  height: 100vh;
-  background: linear-gradient(135deg, #ff6a88, #ff99ac, #f9c5a8);
-  position: relative;
-  overflow: hidden;
-}
-
 body::before {
   content: "";
   position: absolute;
@@ -33,6 +26,7 @@ body::before {
   justify-content: space-between;
   align-items: center;
   padding: 25px 60px;
+  background: linear-gradient(135deg, #ff6a88, #ff99ac, #f9c5a8);
 }
 
 .navbar ul {
@@ -71,6 +65,7 @@ body::before {
   text-align: center;
   position: relative;
   z-index: 2;
+  background: linear-gradient(135deg, #ff6a88, #ff99ac, #f9c5a8);
 }
 
 .content h1 {
