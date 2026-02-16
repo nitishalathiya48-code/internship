@@ -1,19 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.08);
-  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 30% 100%);
 }
 
 .header {
@@ -25,21 +16,23 @@ body::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 60px;
+  padding: 5px;
   background: linear-gradient(135deg, #ff6a88, #ff99ac, #f9c5a8);
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 200px;
+  gap: 2px;
 }
 
 .navbar ul li a {
   text-decoration: none;
-  color: white;
+  color: White;
   font-size: 15px;
-  opacity: 0.9;
+  padding: 27px 83px;
+  text-transform: uppercase;
+  border-radius: 3px;
   transition: 0.3s;
 }
 
@@ -48,8 +41,64 @@ body::before {
   text-decoration: underline;
 }
 
+a.active,a.hover{
+  background: rgb(225, 230, 226)225, 230, 226;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: rgb(229, 238, 230)229, 238, 230;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media(max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(219, 226, 220)219, 226, 220;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a.active,a.hover{
+    background: none;
+    color: rgb(229, 240, 230)229, 240, 230);
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
 .logo {
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  border:#444;
   padding: 15px 40px;
   color: white;
   font-weight: bold;
@@ -58,7 +107,7 @@ body::before {
 }
 
 .hero {
-  height: 85vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,3 +221,96 @@ body::before {
   }
 }
 
+.contain {
+    background: url("images.jpeg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 300px;
+}
+
+.contain-box {
+    padding: 40px 50px;
+    border: 1px solid rgb(145, 169, 180);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+.btn:hover {
+    background: #181616;
+}
+
+.main-section {
+    width: 100%;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.main-section h1 {
+    font-size: 35px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #ff5c5c;
+    margin-bottom: 50px;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.card {
+    width: 320px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fff;
+}
+
+.card p {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #666;
+}
+
+.btn {
+    padding: 15px 40px;
+    border: 1px solid #aaa;
+    background: white;
+    color: #555;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff5c5c;
+    color: white;
+    border-color: #ff5c5c;
+}
